@@ -6,7 +6,7 @@ import { Menu } from "./menu.js";
 
 
 
-let tree = new BinaryTreeSearch<Number, String>();
+let tree = new BinaryTreeSearch<String>();
 Menu.printMenu();
 let exit = false;
 
@@ -22,7 +22,7 @@ while (!exit){
             }
             let key:number = Number(keystr);
             let value = readlineSync.question('value(string): ');
-            tree.add(new Data<Number, String>(key, value));
+            tree.add(new Data<String>(key, value));
             console.log("added");
             break;
         }
